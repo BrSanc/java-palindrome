@@ -12,7 +12,12 @@ public class Palindrome {
             reversedWord = originalWord.charAt(i) + reversedWord;
         }
 
-        System.out.println("Reversed string: " + reversedWord);
+        if (reversedWord.equalsIgnoreCase(originalWord)){
+            System.out.println(reversedWord + " è  una parola palindrome");
+        } else {
+            System.out.println(reversedWord + " non è una parola palindrome");
+        }
+
 
     }
 }
